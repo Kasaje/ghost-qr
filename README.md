@@ -1,26 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ghost QR
+
+A minimal, open source QR code generator built with Next.js. Enter a URL, preview the generated QR code, and download it as a PNG file.
+
+- Live demo: [https://ghost-qr-six.vercel.app/](https://ghost-qr-six.vercel.app/)
+- Built with: `Next.js`, `TypeScript`, `Tailwind CSS`, and `qr-code-styling-node`
+
+## Features
+
+- Real-time QR code preview
+- Download generated QR code as `png`
+- Mobile-friendly layout and accessible button controls
 
 ## Getting Started
 
-First, run the development server:
+To run the app locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/page.tsx` — main QR generator UI and download logic
+- `app/globals.css` — global styling
+- `public/` — static assets
 
-## Learn More
+## Editing
+
+Update `app/page.tsx` to change the QR code behavior, styling, or default URL.
+
+## Deployment
+
+This app is deployed on Vercel and currently available at:
+
+[https://ghost-qr-six.vercel.app/](https://ghost-qr-six.vercel.app/)
+
+For more details on deploying Next.js apps, see the official docs:
+
+- [Next.js Deployment](https://nextjs.org/docs/app/building-your-application/deploying)
 
 To learn more about Next.js, take a look at the following resources:
 
